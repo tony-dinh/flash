@@ -1,0 +1,11 @@
+@import 'node_modules/@tony-dinh/design-system/styles/index';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Franklin|Rubik&display=swap');
+@import "./styleguide";
+
+body {
+    @extend %body-text;
+    background: rgb(187,162,255);
+    background: linear-gradient(140deg, rgba(187,162,255,1) 0%, rgba(0,187,255,1) 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+}

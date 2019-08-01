@@ -1,0 +1,17 @@
+@import "../../../../styles/styleguide.scss";
+
+.c-flash-card-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: v-space(6) v-space(3);
+    width: 100%;
+    height: 100%;
+
+    p {
+        @extend %heading-1;
+        font-weight: $font-weight-bold;
+    }
+}

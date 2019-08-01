@@ -1,0 +1,17 @@
+@import "../../styles/styleguide.scss";
+
+.c-app {
+    &__hud-prev {
+        grid-area: prev-hud;
+        justify-self: left;
+    }
+
+    &__hud-next {
+        grid-area: next-hud;
+        justify-self: right;
+    }
+
+    &__cards {
+        grid-area: cards;
+    }
+}

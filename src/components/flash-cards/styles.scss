@@ -1,0 +1,103 @@
+@import "../../styles/styleguide.scss";
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes appear-right {
+    from {
+        opacity: 0;
+        transform: translate3d(-33%, 0, 0) scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear-left {
+    from {
+        opacity: 0;
+        transform: translate3d(33%, 0, 0) scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(33%, 0, 0) scale(0.2);
+    }
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-33%, 0, 0) scale(0.2);
+    }
+}
+
+.c-flash-cards {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: $card-height;
+    width: 100%;
+    margin: auto;
+
+    &__card {
+        position: absolute;
+        animation-name: appear;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+        opacity: 0;
+
+        &--hidden {
+            display: none;
+        }
+
+        &--appear-right {
+            opacity: 0;
+            animation-name: appear-right;
+            animation-delay: 250ms;
+        }
+
+        &--appear-left {
+            opacity: 0;
+            animation-name: appear-left;
+            animation-delay: 250ms;
+        }
+
+        &--fade-right {
+            opacity: 1;
+            animation-name: fade-right;
+        }
+
+        &--fade-left {
+            opacity: 1;
+            animation-name: fade-left;
+        }
+    }
+}

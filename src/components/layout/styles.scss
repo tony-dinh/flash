@@ -1,0 +1,19 @@
+@import "../../styles/styleguide.scss";
+
+main {
+    width: 100%;
+    max-width: $container-max-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 560px) {
+        display: grid;
+        grid-template-areas:
+            "cards cards cards cards"
+            "prev-hud card-count card-count next-hud";
+        justify-content: unset;
+        grid-gap: v-space(3);
+    }
+}

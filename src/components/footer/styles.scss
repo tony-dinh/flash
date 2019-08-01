@@ -1,0 +1,45 @@
+@import "../../styles/styleguide.scss";
+
+.c-footer {
+    position: absolute;
+    bottom: 0;
+    padding: v-space(3) 0;
+    color: $white;
+
+    &__media-links {
+        list-style: none;
+        display: grid;
+        grid-template-columns: min-content;
+        grid-auto-columns: min-content;
+        grid-auto-flow: column;
+        justify-content: center;
+        grid-gap: v-space(4);
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+
+        li {
+            opacity: 0.6;
+            justify-self: center;
+            transform-origin: center;
+            transition: all 250ms;
+
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.25);
+            }
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    &__byline {
+        display: block;
+        margin-top: v-space(3);
+        opacity: 0.6;
+    }
+}

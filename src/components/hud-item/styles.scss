@@ -1,0 +1,39 @@
+@import "../../styles/styleguide.scss";
+
+.c-hud-item {
+    $parent: &;
+    @extend %body-text-xs;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    text-transform: uppercase;
+    color: $white;
+    transition: all 500ms 100ms;
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+        opacity: 1;
+        transition: all 500ms;
+    }
+
+    span {
+        opacity: 1;
+        color: rgba($white, 0.8);
+        text-transform: lowercase;
+    }
+
+    &__icon {
+        font-size: 4.8rem;
+        margin-bottom: v-space(1);
+        transition: all 250ms;
+
+        #{$parent}:hover &,
+        #{$parent}--active & {
+            transform: scale(1.25);
+        }
+    }
+}

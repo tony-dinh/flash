@@ -1,0 +1,69 @@
+@import 'node_modules/@tony-dinh/design-system/styles/styleguide';
+
+// App Constants
+// ---
+$card-width: v-space(60);
+$card-height: v-space(40);
+$container-max-width: 75.2rem;
+
+// Colors
+// ---
+$black-blue: #2E2F37;
+
+// Typography
+// ---
+%heading-1 {
+    font-family: "Fira Sans", $font-family-default;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+%heading-2 {
+    font-family: "Fira Sans", $font-family-default;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+%heading-3 {
+    font-family: "Fira Sans", $font-family-default;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+%heading-4 {
+    font-family: "Fira Sans", $font-family-default;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+%body-text {
+    font-family: "Rubik", $font-family-default;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    margin: 0;
+}
+
+%body-text-xs {
+    font-family: "Rubik", $font-family-default;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
