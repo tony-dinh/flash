@@ -5,7 +5,7 @@
   "author": "Tony Dinh",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
-    "@tony-dinh/design-system": "../design-system",
+    "@tony-dinh/design-system": "git+https://git@github.com:tony-dinh/design-system.git",
     "classnames": "^2.2.6",
     "gatsby": "^2.13.25",
     "gatsby-image": "^2.2.6",
