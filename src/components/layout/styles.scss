@@ -5,7 +5,7 @@ main {
     max-width: $container-max-width;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     @media screen and (max-width: 560px) {

@@ -7,7 +7,7 @@ import Flex from 'components/flex'
 import './styles.scss'
 
 const Layout = ({ children, className }: Props) => (
-    <Flex align="center" className={className} direction="column" justify="center">
+    <Flex align="center" className={className} direction="column" justify="space-between">
         <main>
             {children}
         </main>

@@ -4,4 +4,9 @@
     padding: v-space(6) v-space(3);
     min-height: 100vh;
     min-width: 100vw;
+
+    &::before {
+        content: '';
+        display: block;
+    }
 }
