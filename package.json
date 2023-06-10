@@ -7,7 +7,7 @@
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@tony-dinh/design-system": "git+https://git@github.com:tony-dinh/design-system.git",
     "classnames": "^2.2.6",
-    "gatsby": "^2.13.25",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
